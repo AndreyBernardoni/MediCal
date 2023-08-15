@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "378224660100",
+    "project_id": "tccflutterflow",
+    "storage_bucket": "tccflutterflow.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:378224660100:android:fa471385ed58928759bcd1",
+        "android_client_info": {
+          "package_name": "com.andreyfb.medical"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "378224660100-goj4fclm4qm6qolvfe6q5rnu2ni0638p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.andreyfb.medical",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "378224660100-hr96lup1fh1ucki8rfpd6oi7vfjk1cae.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.andreyfb.medical",
+            "certificate_hash": "79c734e54fa51e23e9f2527483a84407590e9a87"
+          }
+        },
+        {
+          "client_id": "378224660100-snjh4lfs08lf0d2dqm162893fhjpvs9e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-wlHiqIxYK386En4-XlnTOSeJzhvPOlo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "378224660100-snjh4lfs08lf0d2dqm162893fhjpvs9e.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "378224660100-dr74vtskt814268b5k82p8m4dg26lvd0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mycompany.calmed"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
