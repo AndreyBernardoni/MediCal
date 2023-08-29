@@ -102,7 +102,7 @@ class _MedicationAlertWidgetState extends State<MedicationAlertWidget> {
                     style: FlutterFlowTheme.of(context).headlineMedium.override(
                           fontFamily: 'Outfit',
                           color: FlutterFlowTheme.of(context).customColor4,
-                          fontSize: 36.0,
+                          fontSize: 40.0,
                           fontWeight: FontWeight.w500,
                           useGoogleFonts: GoogleFonts.asMap().containsKey(
                               FlutterFlowTheme.of(context)
@@ -219,8 +219,8 @@ class _MedicationAlertWidgetState extends State<MedicationAlertWidget> {
                           },
                           text: 'Tomar',
                           options: FFButtonOptions(
-                            width: 130.0,
-                            height: 50.0,
+                            width: MediaQuery.sizeOf(context).width * 0.35,
+                            height: MediaQuery.sizeOf(context).height * 0.08,
                             padding: EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 0.0),
                             iconPadding: EdgeInsetsDirectional.fromSTEB(
@@ -281,8 +281,8 @@ class _MedicationAlertWidgetState extends State<MedicationAlertWidget> {
                           },
                           text: 'Adiar',
                           options: FFButtonOptions(
-                            width: 130.0,
-                            height: 50.0,
+                            width: MediaQuery.sizeOf(context).width * 0.35,
+                            height: MediaQuery.sizeOf(context).height * 0.08,
                             padding: EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 0.0),
                             iconPadding: EdgeInsetsDirectional.fromSTEB(

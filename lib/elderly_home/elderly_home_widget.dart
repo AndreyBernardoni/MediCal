@@ -180,7 +180,7 @@ class _ElderlyHomeWidgetState extends State<ElderlyHomeWidget> {
                                     .override(
                                       fontFamily: FlutterFlowTheme.of(context)
                                           .bodyMediumFamily,
-                                      fontSize: 22.0,
+                                      fontSize: 30.0,
                                       useGoogleFonts: GoogleFonts.asMap()
                                           .containsKey(
                                               FlutterFlowTheme.of(context)
@@ -241,7 +241,7 @@ class _ElderlyHomeWidgetState extends State<ElderlyHomeWidget> {
                                         .headlineMedium
                                         .override(
                                           fontFamily: 'Montserrat',
-                                          fontSize: 26.0,
+                                          fontSize: 30.0,
                                           fontWeight: FontWeight.w500,
                                           useGoogleFonts: GoogleFonts.asMap()
                                               .containsKey(
@@ -261,7 +261,7 @@ class _ElderlyHomeWidgetState extends State<ElderlyHomeWidget> {
                                           fontFamily: 'Montserrat',
                                           color: FlutterFlowTheme.of(context)
                                               .secondaryText,
-                                          fontSize: 22.0,
+                                          fontSize: 26.0,
                                           fontWeight: FontWeight.w500,
                                           useGoogleFonts: GoogleFonts.asMap()
                                               .containsKey(
@@ -404,7 +404,7 @@ class _ElderlyHomeWidgetState extends State<ElderlyHomeWidget> {
                                                               .override(
                                                                 fontFamily:
                                                                     'Montserrat',
-                                                                fontSize: 26.0,
+                                                                fontSize: 28.0,
                                                                 useGoogleFonts: GoogleFonts
                                                                         .asMap()
                                                                     .containsKey(
@@ -424,7 +424,7 @@ class _ElderlyHomeWidgetState extends State<ElderlyHomeWidget> {
                                                                   fontFamily:
                                                                       'Montserrat',
                                                                   fontSize:
-                                                                      26.0,
+                                                                      28.0,
                                                                   useGoogleFonts: GoogleFonts
                                                                           .asMap()
                                                                       .containsKey(
@@ -460,7 +460,7 @@ class _ElderlyHomeWidgetState extends State<ElderlyHomeWidget> {
                                                                     fontFamily:
                                                                         'Montserrat',
                                                                     fontSize:
-                                                                        26.0,
+                                                                        28.0,
                                                                     useGoogleFonts: GoogleFonts
                                                                             .asMap()
                                                                         .containsKey(

@@ -74,9 +74,13 @@ class _LoginWidgetState extends State<LoginWidget> {
                           color: FlutterFlowTheme.of(context).white,
                           borderRadius: BorderRadius.circular(25.0),
                         ),
-                        child: Image.asset(
-                          'assets/images/logo.png',
-                          fit: BoxFit.cover,
+                        child: Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              10.0, 10.0, 10.0, 10.0),
+                          child: Image.asset(
+                            'assets/images/Logo.png',
+                            fit: BoxFit.cover,
+                          ),
                         ),
                       ),
                     ),
@@ -189,7 +193,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                             .bodyMedium
                                             .override(
                                               fontFamily: 'Montserrat',
-                                              fontSize: 14.0,
+                                              fontSize: 17.0,
                                               fontWeight: FontWeight.w500,
                                               useGoogleFonts: GoogleFonts
                                                       .asMap()

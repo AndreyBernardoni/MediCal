@@ -78,9 +78,13 @@ class _ContinueRegisterWidgetState extends State<ContinueRegisterWidget> {
                           color: FlutterFlowTheme.of(context).white,
                           borderRadius: BorderRadius.circular(25.0),
                         ),
-                        child: Image.asset(
-                          'assets/images/logo.png',
-                          fit: BoxFit.cover,
+                        child: Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              10.0, 10.0, 10.0, 10.0),
+                          child: Image.asset(
+                            'assets/images/Logo.png',
+                            fit: BoxFit.cover,
+                          ),
                         ),
                       ),
                     ),

@@ -72,7 +72,7 @@ class _TakedPageWidgetState extends State<TakedPageWidget> {
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
                       fontFamily: 'Outfit',
                       color: FlutterFlowTheme.of(context).white,
-                      fontSize: 36.0,
+                      fontSize: 40.0,
                       fontWeight: FontWeight.w500,
                       useGoogleFonts: GoogleFonts.asMap().containsKey(
                           FlutterFlowTheme.of(context).headlineMediumFamily),
@@ -110,8 +110,8 @@ class _TakedPageWidgetState extends State<TakedPageWidget> {
                   },
                   text: 'Início',
                   options: FFButtonOptions(
-                    width: 130.0,
-                    height: 50.0,
+                    width: MediaQuery.sizeOf(context).width * 0.7,
+                    height: MediaQuery.sizeOf(context).height * 0.1,
                     padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                     iconPadding:
                         EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),

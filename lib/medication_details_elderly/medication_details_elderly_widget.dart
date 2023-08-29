@@ -145,7 +145,7 @@ class _MedicationDetailsElderlyWidgetState
                                         .bodyMedium
                                         .override(
                                           fontFamily: 'Montserrat',
-                                          fontSize: 24.0,
+                                          fontSize: 40.0,
                                           useGoogleFonts: GoogleFonts.asMap()
                                               .containsKey(
                                                   FlutterFlowTheme.of(context)
@@ -159,7 +159,7 @@ class _MedicationDetailsElderlyWidgetState
                                       .bodyMedium
                                       .override(
                                         fontFamily: 'Montserrat',
-                                        fontSize: 24.0,
+                                        fontSize: 36.0,
                                         useGoogleFonts: GoogleFonts.asMap()
                                             .containsKey(
                                                 FlutterFlowTheme.of(context)
@@ -186,7 +186,7 @@ class _MedicationDetailsElderlyWidgetState
                                           .bodyMedium
                                           .override(
                                             fontFamily: 'Montserrat',
-                                            fontSize: 24.0,
+                                            fontSize: 30.0,
                                             useGoogleFonts: GoogleFonts.asMap()
                                                 .containsKey(
                                                     FlutterFlowTheme.of(context)
@@ -209,7 +209,7 @@ class _MedicationDetailsElderlyWidgetState
                                           .bodyMedium
                                           .override(
                                             fontFamily: 'Montserrat',
-                                            fontSize: 24.0,
+                                            fontSize: 30.0,
                                             useGoogleFonts: GoogleFonts.asMap()
                                                 .containsKey(
                                                     FlutterFlowTheme.of(context)

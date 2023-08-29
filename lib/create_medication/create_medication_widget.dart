@@ -363,6 +363,7 @@ class _CreateMedicationWidgetState extends State<CreateMedicationWidget> {
                                         12.0, 4.0, 12.0, 4.0),
                                     hidesUnderline: true,
                                     isSearchable: true,
+                                    isMultiSelect: false,
                                   );
                                 },
                               ),
@@ -409,6 +410,7 @@ class _CreateMedicationWidgetState extends State<CreateMedicationWidget> {
                                     12.0, 4.0, 12.0, 4.0),
                                 hidesUnderline: true,
                                 isSearchable: false,
+                                isMultiSelect: false,
                               ),
                             ),
                             if ((_model.dropDownValue2 == 'onlyOneTime') ||
