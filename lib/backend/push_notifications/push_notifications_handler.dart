@@ -91,8 +91,8 @@ class _PushNotificationsHandlerState extends State<PushNotificationsHandler> {
 }
 
 final pageBuilderMap = <String, Future<Widget> Function(Map<String, dynamic>)>{
-  'CaregiverHome': (data) async => CaregiverHomeWidget(),
   'CreateMedication': (data) async => CreateMedicationWidget(),
+  'CaregiverHome': (data) async => CaregiverHomeWidget(),
   'MedicationDetails': (data) async => MedicationDetailsWidget(
         medication: await getDocumentParameter(
             data, 'medication', MedicationsRecord.fromSnapshot),
@@ -106,8 +106,8 @@ final pageBuilderMap = <String, Future<Widget> Function(Map<String, dynamic>)>{
             data, 'medication', MedicationsRecord.fromSnapshot),
       ),
   'TakedPage': (data) async => TakedPageWidget(),
-  'ConnectionsList': (data) async => ConnectionsListWidget(),
   'AlertPage': (data) async => AlertPageWidget(),
+  'ConnectionsList': (data) async => ConnectionsListWidget(),
   'MedicationAlert': (data) async => MedicationAlertWidget(
         medication: await getDocumentParameter(
             data, 'medication', MedicationsRecord.fromSnapshot),
@@ -116,6 +116,21 @@ final pageBuilderMap = <String, Future<Widget> Function(Map<String, dynamic>)>{
         medication: await getDocumentParameter(
             data, 'medication', MedicationsRecord.fromSnapshot),
       ),
+  'Chat': (data) async => ChatWidget(
+        chatUser: await getDocumentParameter(
+            data, 'chatUser', UsersRecord.fromSnapshot),
+        chatRef: getParameter(data, 'chatRef'),
+      ),
+  'AddChatCaregiver': (data) async => AddChatCaregiverWidget(
+        chat:
+            await getDocumentParameter(data, 'chat', ChatsRecord.fromSnapshot),
+      ),
+  'AllChatsCaregiver': (data) async => AllChatsCaregiverWidget(),
+  'AddChatElderly': (data) async => AddChatElderlyWidget(
+        chat:
+            await getDocumentParameter(data, 'chat', ChatsRecord.fromSnapshot),
+      ),
+  'AllChatsElderly': (data) async => AllChatsElderlyWidget(),
 };
 
 bool hasMatchingParameters(Map<String, dynamic> data, Set<String> params) =>

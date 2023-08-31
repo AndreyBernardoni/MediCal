@@ -49,25 +49,11 @@ class _ConnectionsListWidgetState extends State<ConnectionsListWidget> {
           child: Column(
             mainAxisSize: MainAxisSize.max,
             children: [
-              Container(
-                width: double.infinity,
-                height: 70.0,
-                decoration: BoxDecoration(
-                  color: FlutterFlowTheme.of(context).white,
-                  boxShadow: [
-                    BoxShadow(
-                      blurRadius: 4.0,
-                      color: Color(0x33000000),
-                      offset: Offset(0.0, 2.0),
-                    )
-                  ],
-                ),
-                child: wrapWithModel(
-                  model: _model.appbarModel,
-                  updateCallback: () => setState(() {}),
-                  child: AppbarWidget(
-                    title: 'Lista de Conexões',
-                  ),
+              wrapWithModel(
+                model: _model.appbarModel,
+                updateCallback: () => setState(() {}),
+                child: AppbarWidget(
+                  title: 'Lista de Conexões',
                 ),
               ),
               Expanded(
@@ -212,41 +198,50 @@ class _ConnectionsListWidgetState extends State<ConnectionsListWidget> {
                                             ],
                                           ),
                                         ),
-                                        InkWell(
-                                          splashColor: Colors.transparent,
-                                          focusColor: Colors.transparent,
-                                          hoverColor: Colors.transparent,
-                                          highlightColor: Colors.transparent,
-                                          onTap: () async {
-                                            await listViewElderlyListRecord
-                                                .reference
-                                                .delete();
-                                            ScaffoldMessenger.of(context)
-                                                .showSnackBar(
-                                              SnackBar(
-                                                content: Text(
-                                                  'Conexão Encerrada',
-                                                  style: TextStyle(
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .primaryText,
+                                        Row(
+                                          mainAxisSize: MainAxisSize.max,
+                                          children: [
+                                            InkWell(
+                                              splashColor: Colors.transparent,
+                                              focusColor: Colors.transparent,
+                                              hoverColor: Colors.transparent,
+                                              highlightColor:
+                                                  Colors.transparent,
+                                              onTap: () async {
+                                                await listViewElderlyListRecord
+                                                    .reference
+                                                    .delete();
+                                                ScaffoldMessenger.of(context)
+                                                    .showSnackBar(
+                                                  SnackBar(
+                                                    content: Text(
+                                                      'Conexão Encerrada',
+                                                      style: TextStyle(
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .primaryText,
+                                                      ),
+                                                    ),
+                                                    duration: Duration(
+                                                        milliseconds: 4000),
+                                                    backgroundColor:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .secondary,
                                                   ),
-                                                ),
-                                                duration: Duration(
-                                                    milliseconds: 4000),
-                                                backgroundColor:
+                                                );
+                                                Navigator.pop(context);
+                                              },
+                                              child: FaIcon(
+                                                FontAwesomeIcons.solidTrashAlt,
+                                                color:
                                                     FlutterFlowTheme.of(context)
-                                                        .secondary,
+                                                        .secondaryText,
+                                                size: 36.0,
                                               ),
-                                            );
-                                            Navigator.pop(context);
-                                          },
-                                          child: FaIcon(
-                                            FontAwesomeIcons.solidTrashAlt,
-                                            color: FlutterFlowTheme.of(context)
-                                                .secondaryText,
-                                            size: 36.0,
-                                          ),
+                                            ),
+                                          ],
                                         ),
                                       ],
                                     ),

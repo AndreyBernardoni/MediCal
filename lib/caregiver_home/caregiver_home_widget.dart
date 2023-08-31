@@ -1,3 +1,4 @@
+import '/all_chats_caregiver/all_chats_caregiver_widget.dart';
 import '/auth/firebase_auth/auth_util.dart';
 import '/backend/backend.dart';
 import '/create_medication/create_medication_widget.dart';
@@ -181,10 +182,30 @@ class _CaregiverHomeWidgetState extends State<CaregiverHomeWidget> {
                                   },
                                 ),
                               ),
-                              Image.asset(
-                                'assets/images/logo.png',
-                                width: 50.0,
-                                fit: BoxFit.cover,
+                              FlutterFlowIconButton(
+                                borderColor: Color(0x0035D4B7),
+                                borderRadius: 20.0,
+                                borderWidth: 1.0,
+                                buttonSize: 40.0,
+                                fillColor: Color(0x00616161),
+                                icon: Icon(
+                                  Icons.chat_sharp,
+                                  color: FlutterFlowTheme.of(context)
+                                      .secondaryText,
+                                  size: 24.0,
+                                ),
+                                onPressed: () async {
+                                  Navigator.push(
+                                    context,
+                                    PageTransition(
+                                      type: PageTransitionType.bottomToTop,
+                                      duration: Duration(milliseconds: 200),
+                                      reverseDuration:
+                                          Duration(milliseconds: 200),
+                                      child: AllChatsCaregiverWidget(),
+                                    ),
+                                  );
+                                },
                               ),
                             ],
                           ),

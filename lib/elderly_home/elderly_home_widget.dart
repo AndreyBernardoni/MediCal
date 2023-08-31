@@ -1,8 +1,9 @@
+import '/all_chats_elderly/all_chats_elderly_widget.dart';
 import '/auth/firebase_auth/auth_util.dart';
 import '/backend/backend.dart';
+import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/login/login_widget.dart';
 import '/medication_details_elderly/medication_details_elderly_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -120,33 +121,30 @@ class _ElderlyHomeWidgetState extends State<ElderlyHomeWidget> {
                                   ),
                                 ),
                               ),
-                              InkWell(
-                                splashColor: Colors.transparent,
-                                focusColor: Colors.transparent,
-                                hoverColor: Colors.transparent,
-                                highlightColor: Colors.transparent,
-                                onTap: () async {
-                                  setState(() {
-                                    FFAppState().firstAccess = true;
-                                  });
-                                  await authManager.signOut();
-                                  Navigator.pushAndRemoveUntil(
+                              FlutterFlowIconButton(
+                                borderColor: Color(0x0035D4B7),
+                                borderRadius: 20.0,
+                                borderWidth: 1.0,
+                                buttonSize: 40.0,
+                                fillColor: Color(0x00616161),
+                                icon: Icon(
+                                  Icons.message,
+                                  color: FlutterFlowTheme.of(context)
+                                      .secondaryText,
+                                  size: 24.0,
+                                ),
+                                onPressed: () async {
+                                  Navigator.push(
                                     context,
                                     PageTransition(
                                       type: PageTransitionType.bottomToTop,
                                       duration: Duration(milliseconds: 200),
                                       reverseDuration:
                                           Duration(milliseconds: 200),
-                                      child: LoginWidget(),
+                                      child: AllChatsElderlyWidget(),
                                     ),
-                                    (r) => false,
                                   );
                                 },
-                                child: Image.asset(
-                                  'assets/images/logo.png',
-                                  width: 50.0,
-                                  fit: BoxFit.cover,
-                                ),
                               ),
                             ],
                           ),
